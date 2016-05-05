@@ -1,0 +1,20 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "friend finder application",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/BryantBello/FriendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "path": "^0.12.7"
+  }
+}
