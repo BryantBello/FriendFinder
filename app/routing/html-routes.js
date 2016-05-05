@@ -1,28 +1,28 @@
 // ==========================================================
 
-	//DEPENDENCIES
-		var path = require('path');
+//DEPENDENCIES
+var path = require('path');
 
 
 // ==========================================================
 
-	//ROUTING
+//ROUTING
 
-	module.exports = function(app){
+module.exports = function(app) {
 
-		//GET REQUESTS
+    //GET REQUESTS
 
-			//HOME PAGE
-			app.get('/home', function (req, res){
-				res.sendFile(path.join(__dirname + '/../public/home.html'));
-			});
+    //HOME PAGE
+    app.get('/home', function(req, res) {
+        res.sendFile(path.join(__dirname + '/../public/home.html'));
+    });
 
-			//SURVEY PAGE
-			app.get('/survey', function (req, res){
-				res.sendFile(path.join(__dirname + '/../public/survey.html'));
-			});
+    //SURVEY PAGE
+    app.get('/survey', function(req, res) {
+        res.sendFile(path.join(__dirname + '/../public/survey.html'));
+    });
 
-			app.use(function (req, res){
-				res.sendFile(path.join(__dirname + '/../public/home.html'));
-			});
-	};
+    app.use(function(req, res) {
+        res.sendFile(path.join(__dirname + '/../public/home.html'));
+    });
+};
